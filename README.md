@@ -32,7 +32,7 @@ To get word you want.
 
 #### Demo
 
-You can check it on [weapp-weatherfine](https://github.com/brandonxiang/weapp-weatherfine)
+You can check it on [weapp-weatherfine](https://github.com/brandonxiang/weapp-weatherfine). I placed the wxapp-i18n.js into [utils folder](https://github.com/brandonxiang/weapp-weatherfine/tree/master/utils).
 
 ## License
 
