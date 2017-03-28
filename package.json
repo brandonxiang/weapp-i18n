@@ -1,0 +1,26 @@
+{
+  "name": "weapp-i18n",
+  "version": "1.0.0",
+  "description": "A i18n package for weapp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha weapp-i18n.test.js --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonxiang/weapp-i18n.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonxiang/weapp-i18n/issues"
+  },
+  "homepage": "https://github.com/brandonxiang/weapp-i18n#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
