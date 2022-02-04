@@ -10,14 +10,23 @@ T.setLocale = function (code) {
     T.locale = code
 }
 
-T._ = function (line, data) {
-    const locale = T.locale
-    const locales = T.locales
-    if (locale && locales[locale] && locales[locale][line]) {
-        line = locales[locale][line]
-    }
+T._ = function (line) {
+  return T.parsePath( line );
+};
 
-    return line
-}
+T.parsePath = function (line: string) {
+  const parts = line.split( '.' );
+  let locales = T.locales[T.locale];
+  for (const idx in parts) {
+    const part = parts[idx];
+    if (locales[part] != null) {
+      locales = locales[part];
+      if (typeof locales === 'string') {
+        return locales;
+      }
+    }
+  }
+  return line;
+};
 
 export default T
